@@ -160,7 +160,7 @@ export default function CollectPage() {
         
         if (parsedResult.wasteTypeMatch && parsedResult.quantityMatch && parsedResult.confidence > 0.7) {
           await handleStatusChange(selectedTask.id, 'verified')
-          const earnedReward = Math.floor(Math.random() * 50) + 10 // Random reward between 10 and 59
+          const earnedReward = 50 // Fixed reward of 50 for collecting the waste
           
           // Save the reward
           await saveReward(user.id, earnedReward)
