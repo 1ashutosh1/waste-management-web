@@ -1,6 +1,5 @@
 // @ts-nocheck
 'use client'
-// Checking whether correct account is connected with git
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from 'next/navigation'
